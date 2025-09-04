@@ -1,0 +1,2 @@
+months,cagr,vol_ann,sharpe_ann,sortino_ann,maxdd,mar_full,longest_underwater_months,best_month,worst_month,pos_months_pct,n_trades,hit_rate,profit_factor,avg_win_r,avg_loss_r,payoff_ratio,expectancy_r_mean,expectancy_r_median,std_r,min_r,max_r,ulcer_index,martin_ratio,time_underwater_pct,skewness,kurtosis_excess
+199,0.058854,0.07777,0.7751,1.2177,-0.183419,0.321,41,0.108919,-0.051998,0.59799,2736,0.692982,1.154,0.388916,-0.760775,0.511,0.035941,0.30492,0.586946,-1.02162,0.60487,0.061739,0.9764,0.693467,0.866411,4.034511
