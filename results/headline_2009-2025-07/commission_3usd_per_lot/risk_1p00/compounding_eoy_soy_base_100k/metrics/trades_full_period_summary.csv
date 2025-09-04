@@ -1,0 +1,2 @@
+n_trades,hit_rate,profit_factor,avg_win_r,avg_loss_r,payoff_ratio,expectancy_r_mean,expectancy_r_median,std_r,min_r,max_r
+2736,0.695175,1.176,0.392396,-0.761139,0.516,0.04077,0.309025,0.586746,-1.01474,0.60735

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+<desc>Equity curve with drawdown fill</desc>
+<text x="600.0" y="18.0" text-anchor="middle" font-family="sans-serif" font-size="14">Portfolio 2014</text>
+<rect x="70" y="25" width="1100" height="525" fill="white" stroke="#ccc" />
+<line x1="70" y1="550.00" x2="1170" y2="550.00" stroke="#eee"/>
+<text x="62" y="554.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">0.00</text>
+<line x1="70" y1="445.00" x2="1170" y2="445.00" stroke="#eee"/>
+<text x="62" y="449.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">21536</text>
+<line x1="70" y1="340.00" x2="1170" y2="340.00" stroke="#eee"/>
+<text x="62" y="344.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">43073</text>
+<line x1="70" y1="235.00" x2="1170" y2="235.00" stroke="#eee"/>
+<text x="62" y="239.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">64609</text>
+<line x1="70" y1="130.00" x2="1170" y2="130.00" stroke="#eee"/>
+<text x="62" y="134.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">86146</text>
+<line x1="70" y1="25.00" x2="1170" y2="25.00" stroke="#eee"/>
+<text x="62" y="29.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">107682</text>
+<line x1="162.62" y1="25" x2="162.62" y2="550" stroke="#f2f2f2"/>
+<text x="162.62" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Feb</text>
+<line x1="250.68" y1="25" x2="250.68" y2="550" stroke="#f2f2f2"/>
+<text x="250.68" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Mar</text>
+<line x1="348.17" y1="25" x2="348.17" y2="550" stroke="#f2f2f2"/>
+<text x="348.17" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Apr</text>
+<line x1="442.52" y1="25" x2="442.52" y2="550" stroke="#f2f2f2"/>
+<text x="442.52" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">May</text>
+<line x1="540.02" y1="25" x2="540.02" y2="550" stroke="#f2f2f2"/>
+<text x="540.02" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Jun</text>
+<line x1="634.37" y1="25" x2="634.37" y2="550" stroke="#f2f2f2"/>
+<text x="634.37" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Jul</text>
+<line x1="731.86" y1="25" x2="731.86" y2="550" stroke="#f2f2f2"/>
+<text x="731.86" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Aug</text>
+<line x1="829.36" y1="25" x2="829.36" y2="550" stroke="#f2f2f2"/>
+<text x="829.36" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Sep</text>
+<line x1="923.71" y1="25" x2="923.71" y2="550" stroke="#f2f2f2"/>
+<text x="923.71" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Oct</text>
+<line x1="1021.20" y1="25" x2="1021.20" y2="550" stroke="#f2f2f2"/>
+<text x="1021.20" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Nov</text>
+<line x1="1115.55" y1="25" x2="1115.55" y2="550" stroke="#f2f2f2"/>
+<text x="1115.55" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Dec</text>
+<line x1="70" y1="550" x2="1170" y2="550" stroke="#888"/>
+<line x1="70" y1="25" x2="70" y2="550" stroke="#888"/>
+<path d="M 135.44 56.30 L 139.02 56.30 L 180.14 56.30 L 180.14 57.09 L 139.02 59.68 L 135.44 61.28 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 198.91 54.27 L 198.91 54.70 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 290.99 45.64 L 309.91 45.64 L 325.48 45.64 L 466.51 45.64 L 554.37 45.64 L 554.41 45.64 L 554.61 45.64 L 554.61 46.07 L 554.41 48.93 L 554.37 51.14 L 466.51 53.97 L 325.48 48.92 L 309.91 51.77 L 290.99 46.70 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 840.57 43.19 L 840.75 43.19 L 853.82 43.19 L 882.18 43.19 L 906.04 43.19 L 922.07 43.19 L 922.07 44.78 L 906.04 45.57 L 882.18 48.16 L 853.82 50.76 L 840.75 53.35 L 840.57 48.28 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 932.02 42.17 L 948.23 42.17 L 969.54 42.17 L 969.64 42.17 L 969.68 42.17 L 972.36 42.17 L 976.04 42.17 L 988.11 42.17 L 1010.51 42.17 L 1014.26 42.17 L 1014.42 42.17 L 1019.95 42.17 L 1027.60 42.17 L 1032.76 42.17 L 1038.70 42.17 L 1038.85 42.17 L 1038.89 42.17 L 1051.50 42.17 L 1064.17 42.17 L 1075.99 42.17 L 1075.99 44.97 L 1064.17 47.81 L 1051.50 49.89 L 1038.89 52.21 L 1038.85 53.99 L 1038.70 53.04 L 1032.76 55.85 L 1027.60 57.61 L 1019.95 60.12 L 1014.42 55.12 L 1014.26 53.29 L 1010.51 56.10 L 988.11 56.22 L 976.04 56.46 L 972.36 57.93 L 969.68 52.92 L 969.64 54.58 L 969.54 49.55 L 948.23 44.45 L 932.02 47.29 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 1085.28 42.10 L 1098.67 42.10 L 1126.78 42.10 L 1126.78 42.11 L 1098.67 44.78 L 1085.28 47.21 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<polyline fill="none" stroke="#111" stroke-width="1.2" points="70.00,60.93 92.13,59.11 95.20,56.30 135.44,61.28 139.02,59.68 180.14,57.09 183.26,54.27 198.91,54.70 223.50,52.34 248.84,49.49 248.95,48.51 268.18,45.64 290.99,46.70 309.91,51.77 325.48,48.92 466.51,53.97 554.37,51.14 554.41,48.93 554.61,46.07 840.46,43.19 840.57,48.28 840.75,53.35 853.82,50.76 882.18,48.16 906.04,45.57 922.07,44.78 928.74,42.17 932.02,47.29 948.23,44.45 969.54,49.55 969.64,54.58 969.68,52.92 972.36,57.93 976.04,56.46 988.11,56.22 1010.51,56.10 1014.26,53.29 1014.42,55.12 1019.95,60.12 1027.60,57.61 1032.76,55.85 1038.70,53.04 1038.85,53.99 1038.89,52.21 1051.50,49.89 1064.17,47.81 1075.99,44.97 1080.30,42.10 1085.28,47.21 1098.67,44.78 1126.78,42.11 1126.85,40.28 1126.97,38.49 1130.11,36.56 1142.77,35.71 1148.97,33.08 1164.08,32.33 1164.34,30.06 1168.00,29.78 1168.43,27.04 1170.00,25.00"/>
+<text x="620.0" y="588" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#333">UTC time</text>
+<text x="15" y="287.5" transform="rotate(-90 15,287.5)" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#333">Capital</text>
+</svg>

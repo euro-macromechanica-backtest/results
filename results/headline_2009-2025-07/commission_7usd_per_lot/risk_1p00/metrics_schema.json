@@ -1,0 +1,421 @@
+{
+  "about": "Documentation-only JSON for the 7 USD/lot, 1% risk track. Contains no factual values — only field definitions, units, and conventions.",
+  "version": "metrics-schema-1.0",
+  "generated_at_utc": "2025-09-01T09:20:41Z",
+  "units": {
+    "returns": "decimal (0.012 = +1.2%)",
+    "risk_per_trade_pct": "decimal share of capital (e.g., 0.01 for 1%)",
+    "strict_R_classification": {
+      "eps": 1e-12,
+      "win": "R > +eps",
+      "loss": "R < -eps",
+      "note": "Zero-R trades are excluded from the win/loss groups and from the PF denominator; for expectancy/std/min/max they are included as-is"
+    },
+    "timezone": "UTC+0",
+    "currency": "USD"
+  },
+  "rounding_policy": {
+    "cagr_vol_maxdd_best_worst": 6,
+    "sharpe_sortino": 4,
+    "profit_factor_payoff_ratio": 3,
+    "hit_rate_pos_months": 6,
+    "r_block": 6
+  },
+  "methodology": {
+    "monthly_returns_source": "End-of-month NAV; missing month-end values are ffilled to the month-end; months with no trades remain with ret_m=0.",
+    "rebasing": {
+      "compounding": "Anchor NAV=100000 at t0-ε (just before first observation).",
+      "fixed": "Anchor NAV=100000 at YYYY-01-01 00:00 UTC-ε for each calendar year."
+    },
+    "variance": "All standard deviations are sample (ddof=1).",
+    "sharpe_rf": "Sharpe computed with rf=0 unless an rf series is supplied (then use effective monthly rf: (1+rf_ann)^(1/12)-1).",
+    "drawdown_curve": "MaxDD, underwater metrics computed on the monthly EoM equity curve: eq_t = Π(1+r_m)."
+  },
+  "definitions": {
+    "ret_m": "Monthly return from EoM NAV; decimal units; months with no trades = 0.",
+    "cagr": "(Π(1+ret_m))^(12/N) - 1, where N is the number of months.",
+    "vol_ann": "stdev(ret_m, ddof=1) * sqrt(12).",
+    "sharpe_ann": "(mean(r_m - rf_m) / stdev(r_m - rf_m, ddof=1)) * sqrt(12); rf=0 by default.",
+    "sortino_ann": "(mean(r_m) / stdev(r_m[r_m<0], ddof=1)) * sqrt(12); target=0; downside σ only on negative months.",
+    "maxdd": "Minimum drawdown on monthly equity: dd_t = eq/cummax(eq) - 1; report the minimum (negative).",
+    "mar_full": "cagr / abs(maxdd) computed over the full period on the monthly curve.",
+    "longest_underwater_months": "Longest consecutive run of months with dd_t < 0; recovery month (dd=0) not included.",
+    "best_month": "max(ret_m); decimal.",
+    "worst_month": "min(ret_m); decimal.",
+    "pos_months_pct": "Share of months with ret_m > 0; decimal.",
+    "ret_year": "Within-year return from monthly series: Π(1+ret_m_year) - 1.",
+    "maxdd_year": "Yearly MaxDD on the within-year monthly curve.",
+    "R": "For risk 1% track: R = pnl_pct (if pnl_pct is in fractions) or pnl_%/100 (if in percent units).",
+    "hit_rate": "Share of trades with R > 0 (zeros neither wins nor losses).",
+    "profit_factor": "sum(R>0) / |sum(R<=0)| computed on sums (scale-invariant).",
+    "avg_win_r": "mean(R | R>0).",
+    "avg_loss_r": "mean(R | R<=0).",
+    "payoff_ratio": "avg_win_r / |avg_loss_r|.",
+    "expectancy_r_mean": "mean(R).",
+    "expectancy_r_median": "median(R).",
+    "std_r": "stdev(R, ddof=1).",
+    "min_r": "min(R).",
+    "max_r": "max(R)."
+  },
+  "csv_schemas": {
+    "compounding_eoy_soy_base_100k": {
+      "monthly_returns.csv": {
+        "columns": [
+          {
+            "name": "year",
+            "type": "int",
+            "desc": "Calendar year (YYYY)."
+          },
+          {
+            "name": "month",
+            "type": "int",
+            "desc": "1–12."
+          },
+          {
+            "name": "ret_m",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Monthly return from EoM NAV; includes months with 0."
+          }
+        ]
+      },
+      "full_period_summary.csv": {
+        "columns": [
+          {
+            "name": "months",
+            "type": "int",
+            "desc": "Number of months in series (should be 199 for 2009-01..2025-07)."
+          },
+          {
+            "name": "cagr",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Full-period CAGR."
+          },
+          {
+            "name": "vol_ann",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Annualized volatility from monthly returns."
+          },
+          {
+            "name": "sharpe_ann",
+            "type": "float",
+            "desc": "Annualized Sharpe; rf=0 unless specified."
+          },
+          {
+            "name": "sortino_ann",
+            "type": "float",
+            "desc": "Annualized Sortino (downside σ on negative months only)."
+          },
+          {
+            "name": "maxdd",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Max drawdown on monthly curve (negative)."
+          },
+          {
+            "name": "mar_full",
+            "type": "float",
+            "desc": "CAGR / |MaxDD| over full period."
+          },
+          {
+            "name": "longest_underwater_months",
+            "type": "int",
+            "desc": "Longest run of months with dd<0."
+          },
+          {
+            "name": "best_month",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Max monthly return."
+          },
+          {
+            "name": "worst_month",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Min monthly return."
+          },
+          {
+            "name": "pos_months_pct",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Share of positive months."
+          },
+          {
+            "name": "n_trades",
+            "type": "int",
+            "desc": "Total number of trades over period."
+          },
+          {
+            "name": "hit_rate",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Share of trades with R>0."
+          },
+          {
+            "name": "profit_factor",
+            "type": "float",
+            "desc": "Sum wins / |sum losses| (sums)."
+          },
+          {
+            "name": "avg_win_r",
+            "type": "float",
+            "desc": "Mean R among winning trades."
+          },
+          {
+            "name": "avg_loss_r",
+            "type": "float",
+            "desc": "Mean R among losing/zero trades."
+          },
+          {
+            "name": "payoff_ratio",
+            "type": "float",
+            "desc": "avg_win_r / |avg_loss_r|."
+          },
+          {
+            "name": "expectancy_r_mean",
+            "type": "float",
+            "desc": "Mean R over all trades."
+          },
+          {
+            "name": "expectancy_r_median",
+            "type": "float",
+            "desc": "Median R over all trades."
+          },
+          {
+            "name": "std_r",
+            "type": "float",
+            "desc": "Sample stdev of R (ddof=1)."
+          },
+          {
+            "name": "min_r",
+            "type": "float",
+            "desc": "Min R."
+          },
+          {
+            "name": "max_r",
+            "type": "float",
+            "desc": "Max R."
+          }
+        ]
+      },
+      "yearly_summary.csv": {
+        "columns": [
+          {
+            "name": "year",
+            "type": "int",
+            "desc": "Calendar year (YYYY)."
+          },
+          {
+            "name": "ret_year",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Π(1+ret_m_year) - 1."
+          },
+          {
+            "name": "maxdd_year",
+            "type": "float",
+            "units": "decimal",
+            "desc": "MaxDD within the year on monthly curve."
+          },
+          {
+            "name": "trades",
+            "type": "int",
+            "desc": "Number of trades in the year."
+          },
+          {
+            "name": "hit_rate",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Share of R>0 within the year."
+          },
+          {
+            "name": "profit_factor",
+            "type": "float",
+            "desc": "PF for the year (sums)."
+          }
+        ]
+      },
+      "trades_full_period_summary.csv": {
+        "columns": [
+          {
+            "name": "n_trades",
+            "type": "int",
+            "desc": "Total trades (full period)."
+          },
+          {
+            "name": "hit_rate",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Share R>0 (full period)."
+          },
+          {
+            "name": "profit_factor",
+            "type": "float",
+            "desc": "PF on sums (full period)."
+          },
+          {
+            "name": "avg_win_r",
+            "type": "float",
+            "desc": "Mean R of winners (full period)."
+          },
+          {
+            "name": "avg_loss_r",
+            "type": "float",
+            "desc": "Mean R of losers (full period)."
+          },
+          {
+            "name": "payoff_ratio",
+            "type": "float",
+            "desc": "avg_win_r / |avg_loss_r|."
+          },
+          {
+            "name": "expectancy_r_mean",
+            "type": "float",
+            "desc": "Mean R."
+          },
+          {
+            "name": "expectancy_r_median",
+            "type": "float",
+            "desc": "Median R."
+          },
+          {
+            "name": "std_r",
+            "type": "float",
+            "desc": "Stdev R, ddof=1."
+          },
+          {
+            "name": "min_r",
+            "type": "float",
+            "desc": "Min R."
+          },
+          {
+            "name": "max_r",
+            "type": "float",
+            "desc": "Max R."
+          }
+        ]
+      }
+    },
+    "fixed_start_100k": {
+      "monthly_returns.csv": {
+        "columns": [
+          {
+            "name": "year",
+            "type": "int",
+            "desc": "Calendar year (YYYY)."
+          },
+          {
+            "name": "month",
+            "type": "int",
+            "desc": "1–12."
+          },
+          {
+            "name": "ret_m",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Monthly return inside the year; anchor 100k at year start."
+          }
+        ]
+      },
+      "yearly_summary.csv": {
+        "columns": [
+          {
+            "name": "year",
+            "type": "int",
+            "desc": "Calendar year (YYYY)."
+          },
+          {
+            "name": "ret_year",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Within-year Π(1+ret_m) - 1."
+          },
+          {
+            "name": "maxdd_year",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Within-year MaxDD on monthly curve."
+          },
+          {
+            "name": "trades",
+            "type": "int",
+            "desc": "Trades in the year."
+          },
+          {
+            "name": "hit_rate",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Share R>0 in the year."
+          },
+          {
+            "name": "profit_factor",
+            "type": "float",
+            "desc": "PF in the year (sums)."
+          }
+        ]
+      },
+      "trades_full_period_summary.csv": {
+        "columns": [
+          {
+            "name": "n_trades",
+            "type": "int",
+            "desc": "Total trades (full period)."
+          },
+          {
+            "name": "hit_rate",
+            "type": "float",
+            "units": "decimal",
+            "desc": "Share R>0 (full period)."
+          },
+          {
+            "name": "profit_factor",
+            "type": "float",
+            "desc": "PF on sums (full period)."
+          },
+          {
+            "name": "avg_win_r",
+            "type": "float",
+            "desc": "Mean R of winners."
+          },
+          {
+            "name": "avg_loss_r",
+            "type": "float",
+            "desc": "Mean R of losers."
+          },
+          {
+            "name": "payoff_ratio",
+            "type": "float",
+            "desc": "avg_win_r / |avg_loss_r|."
+          },
+          {
+            "name": "expectancy_r_mean",
+            "type": "float",
+            "desc": "Mean R."
+          },
+          {
+            "name": "expectancy_r_median",
+            "type": "float",
+            "desc": "Median R."
+          },
+          {
+            "name": "std_r",
+            "type": "float",
+            "desc": "Stdev R, ddof=1."
+          },
+          {
+            "name": "min_r",
+            "type": "float",
+            "desc": "Min R."
+          },
+          {
+            "name": "max_r",
+            "type": "float",
+            "desc": "Max R."
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+<desc>Equity curve with drawdown fill</desc>
+<text x="600.0" y="18.0" text-anchor="middle" font-family="sans-serif" font-size="14">Portfolio 2014</text>
+<rect x="70" y="25" width="1100" height="525" fill="white" stroke="#ccc" />
+<line x1="70" y1="550.00" x2="1170" y2="550.00" stroke="#eee"/>
+<text x="62" y="554.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">0.00</text>
+<line x1="70" y1="445.00" x2="1170" y2="445.00" stroke="#eee"/>
+<text x="62" y="449.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">21377</text>
+<line x1="70" y1="340.00" x2="1170" y2="340.00" stroke="#eee"/>
+<text x="62" y="344.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">42755</text>
+<line x1="70" y1="235.00" x2="1170" y2="235.00" stroke="#eee"/>
+<text x="62" y="239.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">64132</text>
+<line x1="70" y1="130.00" x2="1170" y2="130.00" stroke="#eee"/>
+<text x="62" y="134.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">85510</text>
+<line x1="70" y1="25.00" x2="1170" y2="25.00" stroke="#eee"/>
+<text x="62" y="29.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">106887</text>
+<line x1="162.62" y1="25" x2="162.62" y2="550" stroke="#f2f2f2"/>
+<text x="162.62" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Feb</text>
+<line x1="250.68" y1="25" x2="250.68" y2="550" stroke="#f2f2f2"/>
+<text x="250.68" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Mar</text>
+<line x1="348.17" y1="25" x2="348.17" y2="550" stroke="#f2f2f2"/>
+<text x="348.17" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Apr</text>
+<line x1="442.52" y1="25" x2="442.52" y2="550" stroke="#f2f2f2"/>
+<text x="442.52" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">May</text>
+<line x1="540.02" y1="25" x2="540.02" y2="550" stroke="#f2f2f2"/>
+<text x="540.02" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Jun</text>
+<line x1="634.37" y1="25" x2="634.37" y2="550" stroke="#f2f2f2"/>
+<text x="634.37" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Jul</text>
+<line x1="731.86" y1="25" x2="731.86" y2="550" stroke="#f2f2f2"/>
+<text x="731.86" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Aug</text>
+<line x1="829.36" y1="25" x2="829.36" y2="550" stroke="#f2f2f2"/>
+<text x="829.36" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Sep</text>
+<line x1="923.71" y1="25" x2="923.71" y2="550" stroke="#f2f2f2"/>
+<text x="923.71" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Oct</text>
+<line x1="1021.20" y1="25" x2="1021.20" y2="550" stroke="#f2f2f2"/>
+<text x="1021.20" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Nov</text>
+<line x1="1115.55" y1="25" x2="1115.55" y2="550" stroke="#f2f2f2"/>
+<text x="1115.55" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Dec</text>
+<line x1="70" y1="550" x2="1170" y2="550" stroke="#888"/>
+<line x1="70" y1="25" x2="70" y2="550" stroke="#888"/>
+<path d="M 135.44 52.81 L 139.02 52.81 L 180.14 52.81 L 180.14 53.80 L 139.02 56.34 L 135.44 57.89 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 198.91 51.02 L 198.91 51.51 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 290.99 42.62 L 309.91 42.62 L 325.48 42.62 L 466.51 42.62 L 554.37 42.62 L 554.41 42.62 L 554.61 42.62 L 554.61 43.45 L 554.41 46.26 L 554.37 48.43 L 466.51 51.23 L 325.48 46.09 L 309.91 48.90 L 290.99 43.75 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 840.57 40.62 L 840.75 40.62 L 853.82 40.62 L 882.18 40.62 L 906.04 40.62 L 922.07 40.62 L 922.07 42.58 L 906.04 43.31 L 882.18 45.85 L 853.82 48.39 L 840.75 50.92 L 840.57 45.77 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 932.02 40.03 L 948.23 40.03 L 969.54 40.03 L 969.64 40.03 L 969.68 40.03 L 972.36 40.03 L 976.04 40.03 L 988.11 40.03 L 1010.51 40.03 L 1014.26 40.03 L 1014.42 40.03 L 1019.95 40.03 L 1027.60 40.03 L 1032.76 40.03 L 1038.70 40.03 L 1038.85 40.03 L 1038.89 40.03 L 1051.50 40.03 L 1064.17 40.03 L 1075.99 40.03 L 1080.30 40.03 L 1085.28 40.03 L 1098.67 40.03 L 1126.78 40.03 L 1126.78 41.46 L 1098.67 44.07 L 1085.28 46.43 L 1080.30 41.24 L 1075.99 44.04 L 1064.17 46.82 L 1051.50 48.84 L 1038.89 51.10 L 1038.85 52.82 L 1038.70 51.82 L 1032.76 54.57 L 1027.60 56.27 L 1019.95 58.73 L 1014.42 53.66 L 1014.26 51.78 L 1010.51 54.54 L 988.11 54.58 L 976.04 54.76 L 972.36 56.17 L 969.68 51.08 L 969.64 52.72 L 969.54 47.63 L 948.23 42.45 L 932.02 45.24 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<polyline fill="none" stroke="#111" stroke-width="1.2" points="70.00,57.35 92.13,55.58 95.20,52.81 135.44,57.89 139.02,56.34 180.14,53.80 183.26,51.02 198.91,51.51 223.50,49.20 248.84,46.40 248.95,45.45 268.18,42.62 290.99,43.75 309.91,48.90 325.48,46.09 466.51,51.23 554.37,48.43 554.41,46.26 554.61,43.45 840.46,40.62 840.57,45.77 840.75,50.92 853.82,48.39 882.18,45.85 906.04,43.31 922.07,42.58 928.74,40.03 932.02,45.24 948.23,42.45 969.54,47.63 969.64,52.72 969.68,51.08 972.36,56.17 976.04,54.76 988.11,54.58 1010.51,54.54 1014.26,51.78 1014.42,53.66 1019.95,58.73 1027.60,56.27 1032.76,54.57 1038.70,51.82 1038.85,52.82 1038.89,51.10 1051.50,48.84 1064.17,46.82 1075.99,44.04 1080.30,41.24 1085.28,46.43 1098.67,44.07 1126.78,41.46 1126.85,39.67 1126.97,37.94 1130.11,36.08 1142.77,35.30 1148.97,32.74 1164.08,32.06 1164.34,29.86 1168.00,29.64 1168.43,26.97 1170.00,25.00"/>
+<text x="620.0" y="588" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#333">UTC time</text>
+<text x="15" y="287.5" transform="rotate(-90 15,287.5)" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#333">Capital</text>
+</svg>

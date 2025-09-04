@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+<desc>Equity curve with drawdown fill</desc>
+<text x="600.0" y="18.0" text-anchor="middle" font-family="sans-serif" font-size="14">Portfolio 2024</text>
+<rect x="70" y="25" width="1100" height="525" fill="white" stroke="#ccc" />
+<line x1="70" y1="550.00" x2="1170" y2="550.00" stroke="#eee"/>
+<text x="62" y="554.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">0.00</text>
+<line x1="70" y1="445.00" x2="1170" y2="445.00" stroke="#eee"/>
+<text x="62" y="449.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">39302</text>
+<line x1="70" y1="340.00" x2="1170" y2="340.00" stroke="#eee"/>
+<text x="62" y="344.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">78604</text>
+<line x1="70" y1="235.00" x2="1170" y2="235.00" stroke="#eee"/>
+<text x="62" y="239.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">117907</text>
+<line x1="70" y1="130.00" x2="1170" y2="130.00" stroke="#eee"/>
+<text x="62" y="134.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">157209</text>
+<line x1="70" y1="25.00" x2="1170" y2="25.00" stroke="#eee"/>
+<text x="62" y="29.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">196511</text>
+<line x1="150.60" y1="25" x2="150.60" y2="550" stroke="#f2f2f2"/>
+<text x="150.60" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Feb</text>
+<line x1="239.21" y1="25" x2="239.21" y2="550" stroke="#f2f2f2"/>
+<text x="239.21" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Mar</text>
+<line x1="333.94" y1="25" x2="333.94" y2="550" stroke="#f2f2f2"/>
+<text x="333.94" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Apr</text>
+<line x1="425.62" y1="25" x2="425.62" y2="550" stroke="#f2f2f2"/>
+<text x="425.62" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">May</text>
+<line x1="520.35" y1="25" x2="520.35" y2="550" stroke="#f2f2f2"/>
+<text x="520.35" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Jun</text>
+<line x1="612.02" y1="25" x2="612.02" y2="550" stroke="#f2f2f2"/>
+<text x="612.02" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Jul</text>
+<line x1="706.75" y1="25" x2="706.75" y2="550" stroke="#f2f2f2"/>
+<text x="706.75" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Aug</text>
+<line x1="801.48" y1="25" x2="801.48" y2="550" stroke="#f2f2f2"/>
+<text x="801.48" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Sep</text>
+<line x1="893.15" y1="25" x2="893.15" y2="550" stroke="#f2f2f2"/>
+<text x="893.15" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Oct</text>
+<line x1="987.88" y1="25" x2="987.88" y2="550" stroke="#f2f2f2"/>
+<text x="987.88" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Nov</text>
+<line x1="1079.56" y1="25" x2="1079.56" y2="550" stroke="#f2f2f2"/>
+<text x="1079.56" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Dec</text>
+<line x1="70" y1="550" x2="1170" y2="550" stroke="#888"/>
+<line x1="70" y1="25" x2="70" y2="550" stroke="#888"/>
+<path d="M 155.53 48.72 L 155.65 48.72 L 155.65 50.51 L 155.53 49.90 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 363.36 37.66 L 363.53 37.66 L 402.25 37.66 L 433.45 37.66 L 540.40 37.66 L 540.40 38.37 L 433.45 41.15 L 402.25 43.91 L 363.53 46.65 L 363.36 42.87 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 751.37 25.41 L 776.04 25.41 L 793.58 25.41 L 818.48 25.41 L 818.48 27.86 L 793.58 30.68 L 776.04 31.36 L 751.37 25.99 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 869.88 25.00 L 904.04 25.00 L 943.87 25.00 L 1003.26 25.00 L 1003.32 25.00 L 1003.44 25.00 L 1003.55 25.00 L 1003.62 25.00 L 1003.67 25.00 L 1004.04 25.00 L 1004.69 25.00 L 1011.54 25.00 L 1026.48 25.00 L 1044.14 25.00 L 1051.23 25.00 L 1053.22 25.00 L 1053.25 25.00 L 1053.38 25.00 L 1061.09 25.00 L 1064.31 25.00 L 1068.39 25.00 L 1069.15 25.00 L 1084.54 25.00 L 1090.70 25.00 L 1096.57 25.00 L 1133.95 25.00 L 1170.00 25.00 L 1170.00 41.30 L 1133.95 42.60 L 1096.57 37.34 L 1090.70 39.83 L 1084.54 42.35 L 1069.15 44.81 L 1068.39 46.40 L 1064.31 49.13 L 1061.09 43.93 L 1053.38 46.67 L 1053.25 48.78 L 1053.22 51.51 L 1051.23 46.33 L 1044.14 44.69 L 1026.48 45.76 L 1011.54 40.53 L 1004.69 40.64 L 1004.04 42.90 L 1003.67 44.06 L 1003.62 45.31 L 1003.55 40.07 L 1003.44 34.84 L 1003.32 29.51 L 1003.26 30.55 L 943.87 25.17 L 904.04 27.54 L 869.88 30.38 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<polyline fill="none" stroke="#111" stroke-width="1.2" points="70.00,51.44 155.37,48.72 155.53,49.90 155.65,50.51 188.98,47.79 189.08,46.51 215.82,43.76 262.36,41.24 299.73,40.45 363.16,37.66 363.36,42.87 363.53,46.65 402.25,43.91 433.45,41.15 540.40,38.37 555.68,35.58 644.30,32.77 711.53,29.95 720.10,27.99 720.74,25.41 751.37,25.99 776.04,31.36 793.58,30.68 818.48,27.86 855.85,25.00 869.88,30.38 904.04,27.54 943.87,25.17 1003.26,30.55 1003.32,29.51 1003.44,34.84 1003.55,40.07 1003.62,45.31 1003.67,44.06 1004.04,42.90 1004.69,40.64 1011.54,40.53 1026.48,45.76 1044.14,44.69 1051.23,46.33 1053.22,51.51 1053.25,48.78 1053.38,46.67 1061.09,43.93 1064.31,49.13 1068.39,46.40 1069.15,44.81 1084.54,42.35 1090.70,39.83 1096.57,37.34 1133.95,42.60 1170.00,41.30"/>
+<text x="620.0" y="588" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#333">UTC time</text>
+<text x="15" y="287.5" transform="rotate(-90 15,287.5)" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#333">Capital</text>
+</svg>

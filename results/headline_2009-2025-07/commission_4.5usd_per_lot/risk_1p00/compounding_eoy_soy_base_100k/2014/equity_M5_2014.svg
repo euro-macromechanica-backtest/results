@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+<desc>Equity curve with drawdown fill</desc>
+<text x="600.0" y="18.0" text-anchor="middle" font-family="sans-serif" font-size="14">Portfolio 2014</text>
+<rect x="70" y="25" width="1100" height="525" fill="white" stroke="#ccc" />
+<line x1="70" y1="550.00" x2="1170" y2="550.00" stroke="#eee"/>
+<text x="62" y="554.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">0.00</text>
+<line x1="70" y1="445.00" x2="1170" y2="445.00" stroke="#eee"/>
+<text x="62" y="449.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">26259</text>
+<line x1="70" y1="340.00" x2="1170" y2="340.00" stroke="#eee"/>
+<text x="62" y="344.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">52517</text>
+<line x1="70" y1="235.00" x2="1170" y2="235.00" stroke="#eee"/>
+<text x="62" y="239.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">78776</text>
+<line x1="70" y1="130.00" x2="1170" y2="130.00" stroke="#eee"/>
+<text x="62" y="134.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">105035</text>
+<line x1="70" y1="25.00" x2="1170" y2="25.00" stroke="#eee"/>
+<text x="62" y="29.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">131294</text>
+<line x1="162.62" y1="25" x2="162.62" y2="550" stroke="#f2f2f2"/>
+<text x="162.62" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Feb</text>
+<line x1="250.68" y1="25" x2="250.68" y2="550" stroke="#f2f2f2"/>
+<text x="250.68" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Mar</text>
+<line x1="348.17" y1="25" x2="348.17" y2="550" stroke="#f2f2f2"/>
+<text x="348.17" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Apr</text>
+<line x1="442.52" y1="25" x2="442.52" y2="550" stroke="#f2f2f2"/>
+<text x="442.52" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">May</text>
+<line x1="540.02" y1="25" x2="540.02" y2="550" stroke="#f2f2f2"/>
+<text x="540.02" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Jun</text>
+<line x1="634.37" y1="25" x2="634.37" y2="550" stroke="#f2f2f2"/>
+<text x="634.37" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Jul</text>
+<line x1="731.86" y1="25" x2="731.86" y2="550" stroke="#f2f2f2"/>
+<text x="731.86" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Aug</text>
+<line x1="829.36" y1="25" x2="829.36" y2="550" stroke="#f2f2f2"/>
+<text x="829.36" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Sep</text>
+<line x1="923.71" y1="25" x2="923.71" y2="550" stroke="#f2f2f2"/>
+<text x="923.71" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Oct</text>
+<line x1="1021.20" y1="25" x2="1021.20" y2="550" stroke="#f2f2f2"/>
+<text x="1021.20" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Nov</text>
+<line x1="1115.55" y1="25" x2="1115.55" y2="550" stroke="#f2f2f2"/>
+<text x="1115.55" y="566" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#555">Dec</text>
+<line x1="70" y1="550" x2="1170" y2="550" stroke="#888"/>
+<line x1="70" y1="25" x2="70" y2="550" stroke="#888"/>
+<path d="M 135.44 55.02 L 139.02 55.02 L 180.14 55.02 L 180.14 55.88 L 139.02 58.45 L 135.44 60.02 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 198.91 53.08 L 198.91 53.53 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 290.99 44.53 L 309.91 44.53 L 325.48 44.53 L 466.51 44.53 L 554.37 44.53 L 554.41 44.53 L 554.61 44.53 L 554.61 45.11 L 554.41 47.96 L 554.37 50.15 L 466.51 52.97 L 325.48 47.89 L 309.91 50.72 L 290.99 45.61 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 840.57 42.25 L 840.75 42.25 L 853.82 42.25 L 882.18 42.25 L 906.04 42.25 L 922.07 42.25 L 922.07 43.95 L 906.04 44.72 L 882.18 47.29 L 853.82 49.87 L 840.75 52.44 L 840.57 47.35 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 932.02 41.37 L 948.23 41.37 L 969.54 41.37 L 969.64 41.37 L 969.68 41.37 L 972.36 41.37 L 976.04 41.37 L 988.11 41.37 L 1010.51 41.37 L 1014.26 41.37 L 1014.42 41.37 L 1019.95 41.37 L 1027.60 41.37 L 1032.76 41.37 L 1038.70 41.37 L 1038.85 41.37 L 1038.89 41.37 L 1051.50 41.37 L 1064.17 41.37 L 1075.99 41.37 L 1080.30 41.37 L 1085.28 41.37 L 1098.67 41.37 L 1126.78 41.37 L 1126.78 41.87 L 1098.67 44.52 L 1085.28 46.92 L 1080.30 41.77 L 1075.99 44.62 L 1064.17 47.44 L 1051.50 49.50 L 1038.89 51.80 L 1038.85 53.55 L 1038.70 52.58 L 1032.76 55.37 L 1027.60 57.11 L 1019.95 59.60 L 1014.42 54.58 L 1014.26 52.73 L 1010.51 55.53 L 988.11 55.61 L 976.04 55.83 L 972.36 57.28 L 969.68 52.23 L 969.64 53.89 L 969.54 48.83 L 948.23 43.70 L 932.02 46.53 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<polyline fill="none" stroke="#111" stroke-width="1.2" points="70.00,59.61 92.13,57.81 95.20,55.02 135.44,60.02 139.02,58.45 180.14,55.88 183.26,53.08 198.91,53.53 223.50,51.19 248.84,48.36 248.95,47.38 268.18,44.53 290.99,45.61 309.91,50.72 325.48,47.89 466.51,52.97 554.37,50.15 554.41,47.96 554.61,45.11 840.46,42.25 840.57,47.35 840.75,52.44 853.82,49.87 882.18,47.29 906.04,44.72 922.07,43.95 928.74,41.37 932.02,46.53 948.23,43.70 969.54,48.83 969.64,53.89 969.68,52.23 972.36,57.28 976.04,55.83 988.11,55.61 1010.51,55.53 1014.26,52.73 1014.42,54.58 1019.95,59.60 1027.60,57.11 1032.76,55.37 1038.70,52.58 1038.85,53.55 1038.89,51.80 1051.50,49.50 1064.17,47.44 1075.99,44.62 1080.30,41.77 1085.28,46.92 1098.67,44.52 1126.78,41.87 1126.85,40.06 1126.97,38.29 1130.11,36.38 1142.77,35.56 1148.97,32.95 1164.08,32.23 1164.34,29.99 1168.00,29.73 1168.43,27.02 1170.00,25.00"/>
+<text x="620.0" y="588" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#333">UTC time</text>
+<text x="15" y="287.5" transform="rotate(-90 15,287.5)" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#333">Capital</text>
+</svg>

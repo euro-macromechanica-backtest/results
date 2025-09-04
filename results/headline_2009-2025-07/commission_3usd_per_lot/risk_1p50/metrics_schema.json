@@ -1,0 +1,149 @@
+{
+  "track": {
+    "name": "Institutional — 3 USD/lot, risk 1.5%",
+    "timezone": "UTC+0",
+    "risk_per_trade_pct": 0.015,
+    "R_definition": "1R = 1.5% of capital at entry. If pnl_pct is in fractions → R = pnl_pct / 0.015; if pnl_% is in percent → R = pnl_% / 1.5; if pnl_r/r exists — use it only if it is already R at 1.5% risk.",
+    "strict_R_classification": {
+      "eps": 1e-12,
+      "win": "R > +eps",
+      "loss": "R < -eps",
+      "note": "Zero-R trades are excluded from the win/loss groups and from the PF denominator; for expectancy/std/min/max they are included as-is."
+    }
+  },
+  "compounding_eoy_soy_base_100k": {
+    "monthly_returns.csv": {
+      "year": "Observation year (EoM).",
+      "month": "Month (1–12).",
+      "ret_m": "Monthly return computed from the last EoM NAV with ffill and an anchor of 100k at t0−ε."
+    },
+    "full_period_summary.csv": {
+      "months": "Number of months in the ret_m series.",
+      "cagr": "Annualized geometric return: (Π(1+ret_m))^(12/N) - 1.",
+      "vol_ann": "Annualized volatility: stdev(ret_m, ddof=1)·√12.",
+      "sharpe_ann": "Sharpe on monthly ret_m, annualized: (mean(r_m - rf_m)/stdev(r_m − rf_m, ddof=1))·√12; rf=0 by default.",
+      "sortino_ann": "Sortino on monthly ret_m, annualized: (mean(r_m)/stdev(r_m[r_m<0], ddof=1))·√12 (target=0).",
+      "maxdd": "Max drawdown on the monthly equity curve eq=Π(1+ret_m): min(eq/cummax(eq) − 1). Negative value.",
+      "mar_full": "MAR over the full period: cagr/|maxdd|.",
+      "longest_underwater_months": "Longest run of consecutive months with dd<0 (the recovery month with dd=0 is not included).",
+      "time_underwater_pct": "Share of months with dd<0 over the full series.",
+      "best_month": "Largest monthly return r_m.",
+      "worst_month": "Smallest monthly return r_m.",
+      "pos_months_pct": "Share of months with r_m>0.",
+      "n_trades": "Number of trades over the full period (sum across trades_YYYY.csv).",
+      "hit_rate": "Share of trades with R>+eps.",
+      "profit_factor": "PF = sum(R[R>+eps]) / |sum(R[R<-eps])| (on sums of wins and losses).",
+      "avg_win_r": "Mean R among winners: mean(R[R>+eps]).",
+      "avg_loss_r": "Mean R among losers: mean(R[R<-eps]).",
+      "payoff_ratio": "avg_win_r / |avg_loss_r|.",
+      "expectancy_r_mean": "Mean R over all trades (including zeros).",
+      "expectancy_r_median": "Median R over all trades (including zeros).",
+      "std_r": "Sample σ of R (ddof=1) over all trades.",
+      "min_r": "Minimum R in the period.",
+      "max_r": "Maximum R in the period.",
+      "ulcer_index": "UI: sqrt(mean(max(0, −dd)^2)) on the monthly dd curve.",
+      "martin_ratio": "Martin = (mean(r_m)·12)/UlcerIndex.",
+      "skewness": "Sample skewness of r_m (monthly returns).",
+      "kurtosis_excess": "Excess kurtosis of r_m (Fisher; above 3)."
+    },
+    "yearly_summary.csv": {
+      "year": "Year.",
+      "ret_year": "Annual return: Π(1+ret_m within the year) − 1.",
+      "maxdd_year": "MaxDD on the monthly curve within the year.",
+      "trades": "Number of trades in the year (from trades_YYYY.csv).",
+      "hit_rate": "Share of trades with R>+eps within the year.",
+      "profit_factor": "PF for the year: sum(R>+eps)/|sum(R<-eps)|."
+    },
+    "trades_full_period_summary.csv": {
+      "n_trades": "Total number of trades over the full period.",
+      "hit_rate": "Share of trades with R>+eps.",
+      "profit_factor": "PF = sum(R[R>+eps]) / |sum(R[R<-eps])|.",
+      "avg_win_r": "Mean R among winners (R>+eps).",
+      "avg_loss_r": "Mean R among losers (R<-eps).",
+      "payoff_ratio": "avg_win_r / |avg_loss_r|.",
+      "expectancy_r_mean": "Mean R over all trades.",
+      "expectancy_r_median": "Median R over all trades.",
+      "std_r": "Sample σ of R (ddof=1).",
+      "min_r": "Minimum R.",
+      "max_r": "Maximum R."
+    },
+    "rolling_12m.csv": {
+      "date": "End of the 12-month window (YYYY-MM).",
+      "roll_12m_return": "Cumulative return of the window: Π(1+r_m_window) − 1.",
+      "roll_12m_sharpe": "Sharpe within the window: (mean/σ)·√12, rf=0, ddof=1."
+    },
+    "rolling_36m.csv": {
+      "date_end": "End of the 36-month window (YYYY-MM).",
+      "ret_36m_ann": "Annualized return of the window: (Π(1+r_m_window))^(12/36) − 1.",
+      "maxdd_36m": "MaxDD on the monthly curve within the window.",
+      "calmar_36m": "Window Calmar: ret_36m_ann/|maxdd_36m|."
+    },
+    "dd_quantiles.csv": {
+      "quantile": "Percentile label (e.g., p95, p99).",
+      "drawdown_quantile": "Value of the left-tail percentile of dd (negative)."
+    },
+    "kelly_summary.csv": {
+      "winsor_lo": "Lower winsorization quantile for R (typically 0.01).",
+      "winsor_hi": "Upper winsorization quantile for R (typically 0.99).",
+      "f_opt": "Optimal Kelly fraction, max E[log(1+f·R_w)] for f∈[0, f_cap].",
+      "f_half": "Half of f_opt (more conservative fraction).",
+      "f_quarter": "Quarter of f_opt (even more conservative).",
+      "obj_at_f_opt": "Maximum value of E[log(1+f·R_w)] at f_opt.",
+      "_notes": "f_cap = min(0.10, 0.95/|min(R_w)|); R_w — winsorized R at 1%/99%."
+    },
+    "monte_carlo_summary.csv": {
+      "months": "Length of the original series in months.",
+      "bootstrap_B": "Number of bootstrap runs (e.g., 5000).",
+      "block_len_months": "Length of the circular block in months (e.g., 3).",
+      "cagr_p05": "5th percentile CAGR across simulations.",
+      "cagr_p50": "Median CAGR across simulations.",
+      "cagr_p95": "95th percentile CAGR across simulations.",
+      "maxdd_p50": "Median MaxDD across simulations.",
+      "maxdd_p95": "95th percentile MaxDD across simulations.",
+      "p_cagr_lt_0": "Probability that CAGR<0 across simulations.",
+      "p_maxdd_lt_-0.30": "Probability that MaxDD ≤ −30% across simulations."
+    }
+  },
+  "fixed_start_100k": {
+    "monthly_returns.csv": {
+      "year": "Observation year (within-year reset to 100k).",
+      "month": "Month (1–12).",
+      "ret_m": "Monthly return within the year with an anchor of 100k at 01-01 00:00 UTC−ε."
+    },
+    "yearly_summary.csv": {
+      "year": "Year.",
+      "ret_year": "Within-year annual return from the monthly curve.",
+      "maxdd_year": "Within-year MaxDD on the monthly curve.",
+      "trades": "Number of trades in the year (from trades_YYYY.csv).",
+      "hit_rate": "Share of trades with R>+eps within the year.",
+      "profit_factor": "PF for the year: sum(R>+eps)/|sum(R<-eps)|."
+    },
+    "trades_full_period_summary.csv": {
+      "n_trades": "Number of trades across all years of the fixed track.",
+      "hit_rate": "Share of trades with R>+eps.",
+      "profit_factor": "PF = sum(R[R>+eps]) / |sum(R[R<-eps])|.",
+      "avg_win_r": "Mean R among winners (R>+eps).",
+      "avg_loss_r": "Mean R among losers (R<-eps).",
+      "payoff_ratio": "avg_win_r / |avg_loss_r|.",
+      "expectancy_r_mean": "Mean R over all trades.",
+      "expectancy_r_median": "Median R over all trades.",
+      "std_r": "Sample σ of R (ddof=1).",
+      "min_r": "Minimum R.",
+      "max_r": "Maximum R."
+    }
+  },
+  "rounding_guidelines": {
+    "cagr_vol_maxdd_best_worst": "6 decimal places.",
+    "sharpe_sortino": "4 decimals.",
+    "pf_payoff_martin_calmar": "3 decimals.",
+    "hit_rate_pos_months_time_uw": "6 decimals (in fractions).",
+    "r_metrics": "6 decimals.",
+    "ulcer": "6 decimals."
+  },
+  "notes": [
+    "Include the last incomplete month (NAV ffilled to EoM).",
+    "Do not drop months with no trades: ret_m = 0.",
+    "Underwater is computed on the monthly curve; the recovery month (dd=0) is not included in the run.",
+    "Sharpe uses rf=0 by default; if an annual rf is available, use rf_m = (1+rf_ann)^(1/12) − 1."
+  ]
+}
