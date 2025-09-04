@@ -1,0 +1,50 @@
+# =========================
+#   TEXT FILES — LF
+# =========================
+*.md        text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.txt       text eol=lf
+*.csv       text eol=lf
+*.json      text eol=lf
+*.ini       text eol=lf
+*.cfg       text eol=lf
+*.tmpl      text eol=lf
+*.svg       text eol=lf
+Dockerfile  text eol=lf
+Makefile    text eol=lf
+
+# =========================
+#   BINARY FILES — RAW
+# =========================
+*.csv.gz    binary
+*.sha256    binary
+*.svgz      binary
+*.sig       binary
+*.asc       binary
+*.ots       binary
+*.zip       binary
+*.tar       binary
+*.tar.gz    binary
+*.tar.xz    binary
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.pdf       binary
+
+# =========================
+#   SPECIAL FOLDERS
+# =========================
+# artifacts (results .csv.gz, PNG etc)
+out/*        binary
+# SHA-256 manifests
+manifests/*  binary
+# Raw entry data
+input/*      binary
+# templates, as text with LF
+templates/*  text eol=lf
+# docs
+docs/*       text eol=lf
+# conf
+config/*     text eol=lf
