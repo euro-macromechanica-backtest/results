@@ -1,0 +1,2 @@
+Strategy proofs only (SHA-256, GPG, OTS). The strategy source code is not included.
+See ../STRATEGY-CODE-NOTICE.txt and ../COMMERCIAL.md for access terms.
