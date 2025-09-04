@@ -1,0 +1,18 @@
+Strategy Code — Proprietary / All Rights Reserved
+
+NOTE: This is NOT the repository license. For the repo license see ./LICENSE (CC BY-NC 4.0).
+
+
+The original trading strategy source code is NOT published and NOT transferred.
+Access is limited to a supervised live run (screen-shared demo).
+Optionally, a black-box artifact provision can be considered under a separate agreement and NDA.
+Detailed per-trade reports (timestamps/prices) and time-indexed equity/drawdown series are not provided.
+
+Details see COMMERCIAL.md
+
+
+No source-code license is granted. Any evaluation/commercial use requires a separate written agreement.
+
+© 2025 rleydev (thelaziestcat) · thelaziestcat@proton.me / thelazyazzcat@gmail.com
+
+SPDX-License-Identifier: LicenseRef-StrategyCode-Proprietary
