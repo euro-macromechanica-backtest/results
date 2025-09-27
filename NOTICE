@@ -1,0 +1,21 @@
+NOTICE
+
+Default license for public RESULTS and DOCUMENTATION: CC BY-NC 4.0.
+Folder-specific overrides: see LICENSES.md.
+
+EXCLUSIONS / OVERRIDES:
+- /integrity/**  → CC0 1.0 — integrity manifests, GPG, OTS.
+- /keys/**       → CC0 1.0 — public verification keys.
+- /data_quality_policy/** → CC BY 4.0 — policy text & tables.
+- /strategy_proof/** → CC BY-NC 4.0 — proofs (no code).
+- /docs/** → CC BY 4.0 - documentation and other files.
+
+NOT INCLUDED / NOT LICENSED HERE:
+- Proprietary strategy source code — All Rights Reserved (see STRATEGY-CODE-NOTICE.txt).
+- Per-trade CSVs and time-indexed closed-balance (realized PnL)/drawdown series are not public.
+- Third‑party raw datasets (if referenced) remain under their providers’ terms.
+
+© 2025 A (rleydev / thelaziestcat)
+Default license: CC BY‑NC 4.0 (non‑commercial; attribution required).
+
+
