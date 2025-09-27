@@ -1,0 +1,11 @@
+Strategy Code — Proprietary / All Rights Reserved
+
+NOTE: This is NOT the repository license. For the repo license see ./LICENSE (CC BY-NC 4.0).
+
+
+The original trading strategy source code is NOT published and NOT transferred.
+
+
+No source-code license is granted. Any evaluation/commercial use requires a separate written agreement.
+
+© 2025 rleydev (thelaziestcat) ·  thelazyazzcat@gmail.com / thelaziestcat@proton.me
