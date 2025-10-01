@@ -1,0 +1,2 @@
+period_start_month,period_end_month,dd_observations_count,dd_episodes_count,drawdown_p90_full_period,drawdown_p95_full_period,drawdown_p99_full_period,underwater_duration_p90_full_period,underwater_duration_p95_full_period,drawdown_p90_full_period_xrisk,drawdown_p95_full_period_xrisk,drawdown_p99_full_period_xrisk
+2008-01,2025-08,110,24,-0.0028,-0.0025,-0.0013,14,19,0.28,0.25,0.13
