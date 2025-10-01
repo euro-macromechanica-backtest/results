@@ -1,0 +1,2 @@
+trade_count,win_rate,profit_factor,average_winning_trade_r,average_losing_trade_r,payoff_ratio,expectancy_mean_r,expectancy_median_r,r_std_dev,r_min,r_max
+342,0.6988,1.19,0.37,-0.72,0.51,0.04,0.28,0.5616,-1.0272,0.5698

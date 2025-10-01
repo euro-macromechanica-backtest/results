@@ -1,0 +1,6 @@
+year,annual_return_calendar,eom_max_drawdown_intra_year,intramonth_max_drawdown_intra_year,trade_count,win_rate,profit_factor,active_months_count,active_months_share,annual_return_active,volatility_active_annualized,sharpe_active_annualized,sortino_active_annualized,cagr_active,insufficient_months,insufficient_active_months,insufficient_negative_months,insufficient_trades,volatility_annualized_year,sharpe_ratio_annualized_year,sortino_ratio_annualized_year,calmar_ratio_year,negative_months_in_year,months_in_year_available,is_ytd,positive_months_in_year,opening_cashflow_ccy
+2003,0.0771,-0.0108,-0.0308,100,0.7300,1.41,12,1.0000,0.0771,0.0386,1.95,4.29,0.0771,false,false,false,false,0.0386,1.95,4.29,7.10,3,12,false,9,0.00
+2004,0.0713,-0.0161,-0.0345,117,0.7094,1.27,12,1.0000,0.0713,0.0399,1.75,4.64,0.0713,false,false,false,false,0.0399,1.75,4.64,4.43,2,12,false,10,0.00
+2005,-0.0400,-0.0471,-0.0554,66,0.6515,0.79,12,1.0000,-0.0400,0.0467,-0.85,-1.29,-0.0400,false,false,false,false,0.0467,-0.85,-1.29,-0.85,8,12,false,4,0.00
+2006,0.0307,-0.0169,-0.0222,40,0.6500,1.45,10,0.8333,0.0307,0.0388,0.95,2.62,0.0370,false,false,false,false,0.0354,0.87,2.18,1.82,3,12,false,7,0.00
+2007,0.0017,-0.0127,-0.0228,19,0.7368,1.05,10,0.8333,0.0017,0.0209,0.10,0.15,0.0020,false,false,false,false,0.0189,0.10,0.12,0.13,3,12,false,7,0.00
