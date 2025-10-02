@@ -1,0 +1,46 @@
+period_start_month,period_end_month,scope,year,metric_key,metric_label,metric_basis,units,rounding_family,method,ci_level_pct,estimate,ci_low,ci_high,bootstrap_type,block_mean_length_months,block_mean_length_days,n_boot,seed
+2008-01,2025-08,full_period,,cagr_full_period,CAGR (Full Period),monthly,decimal,percent_like,bootstrap_bca,90,0.0687,0.0434,0.1002,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,full_period,,volatility_annualized_full_period,Volatility Annualized (Full Period),monthly,decimal,percent_like,bootstrap_bca,90,0.0544,0.0428,0.0684,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,full_period,,eom_max_drawdown_full_period,EoM Max Drawdown (Full Period),eom,decimal,percent_like,bootstrap_bca,90,-0.0552,-0.0937,-0.0406,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,full_period,,intramonth_max_drawdown_full_period,Intramonth Max Drawdown (Full Period),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0942,-0.1512,-0.0647,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,full_period,,ulcer_index_full_period,Ulcer Index (Full Period),eom,decimal,percent_like,bootstrap_bca,90,0.0191,0.0132,0.0276,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,full_period,,monthly_var_95_full_period,Monthly VaR 95% (Full Period),monthly,decimal,percent_like,bootstrap_bca,90,-0.0150,-0.0212,-0.0109,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,full_period,,monthly_es_95_full_period,Monthly ES 95% (Full Period),monthly,decimal,percent_like,bootstrap_bca,90,-0.0226,-0.0294,-0.0173,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,full_period,,monthly_var_99_full_period,Monthly VaR 99% (Full Period),monthly,decimal,percent_like,bootstrap_bca,90,-0.0250,-0.0387,-0.0212,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,full_period,,monthly_es_99_full_period,Monthly ES 99% (Full Period),monthly,decimal,percent_like,bootstrap_bca,90,-0.0308,-0.0401,-0.0243,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2008,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,-0.0552,-0.1432,-0.0401,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2009,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,-0.0389,-0.0763,-0.0145,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2010,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,-0.0129,-0.0330,-0.0072,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2011,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,-0.0224,-0.0290,-0.0134,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2012,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,-0.0407,-0.0814,-0.0181,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2013,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,-0.0067,-0.0224,-0.0045,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2014,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,-0.0250,-0.0870,-0.0250,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2015,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,-0.0024,-0.0052,-0.0014,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2016,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,-0.0097,-0.0193,-0.0046,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2017,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,0.0000,-0.0107,0.0000,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2018,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,-0.0153,-0.0244,-0.0076,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2019,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,0.0000,-0.0002,0.0000,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2020,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,0.0000,0.0000,0.0000,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2021,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,-0.0028,-0.0057,0.0000,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2022,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,-0.0232,-0.0678,-0.0232,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2023,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,-0.0324,-0.0580,-0.0201,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2024,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,-0.0056,-0.0161,-0.0050,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2025,eom_max_drawdown_intra_year,EoM Max Drawdown (Calendar Year),eom,decimal,percent_like,bootstrap_bca,90,-0.0365,-0.0642,-0.0157,stationary_bootstrap,6,,5000,43
+2008-01,2025-08,calendar_year,2008,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0942,-0.1777,-0.0528,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2009,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0773,-0.1499,-0.0439,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2010,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0360,-0.0641,-0.0201,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2011,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0483,-0.0943,-0.0287,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2012,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0504,-0.1003,-0.0219,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2013,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0205,-0.0345,-0.0045,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2014,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0288,-0.0577,-0.0103,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2015,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0211,-0.0342,-0.0126,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2016,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0123,-0.0223,-0.0102,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2017,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0269,-0.0573,-0.0121,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2018,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0158,-0.0324,-0.0102,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2019,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0023,-0.0040,-0.0017,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2020,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0420,-0.0825,-0.0203,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2021,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0028,-0.0057,0.0000,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2022,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0327,-0.0617,-0.0205,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2023,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0421,-0.0781,-0.0208,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2024,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0102,-0.0257,-0.0101,stationary_bootstrap,,5,5000,43
+2008-01,2025-08,calendar_year,2025,intramonth_max_drawdown_intra_year,Intramonth Max Drawdown (Calendar Year),intramonth,decimal,percent_like,bootstrap_bca,90,-0.0374,-0.0750,-0.0182,stationary_bootstrap,,5,5000,43

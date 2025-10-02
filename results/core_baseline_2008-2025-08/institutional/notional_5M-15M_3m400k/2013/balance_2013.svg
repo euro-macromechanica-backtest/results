@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+<desc>Equity curve with drawdown fill; x-axis is months only (no exact timestamps)</desc>
+<text x="600.0" y="18.0" text-anchor="middle" font-family="sans-serif" font-size="14">Balance Curve 2013 (UTC)</text>
+<rect x="70" y="25" width="1100" height="525" fill="white" stroke="#ccc" />
+<line x1="70" y1="550.00" x2="1170" y2="550.00" stroke="#eee"/>
+<text x="62" y="554.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">0.00</text>
+<line x1="70" y1="445.00" x2="1170" y2="445.00" stroke="#eee"/>
+<text x="62" y="449.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">715141</text>
+<line x1="70" y1="340.00" x2="1170" y2="340.00" stroke="#eee"/>
+<text x="62" y="344.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">1430283</text>
+<line x1="70" y1="235.00" x2="1170" y2="235.00" stroke="#eee"/>
+<text x="62" y="239.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">2145424</text>
+<line x1="70" y1="130.00" x2="1170" y2="130.00" stroke="#eee"/>
+<text x="62" y="134.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">2860565</text>
+<line x1="70" y1="25.00" x2="1170" y2="25.00" stroke="#eee"/>
+<text x="62" y="29.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">3575707</text>
+<line x1="161.67" y1="25" x2="161.67" y2="550" stroke="#f2f2f2"/>
+<line x1="253.33" y1="25" x2="253.33" y2="550" stroke="#f2f2f2"/>
+<line x1="345.00" y1="25" x2="345.00" y2="550" stroke="#f2f2f2"/>
+<line x1="436.67" y1="25" x2="436.67" y2="550" stroke="#f2f2f2"/>
+<line x1="528.33" y1="25" x2="528.33" y2="550" stroke="#f2f2f2"/>
+<line x1="620.00" y1="25" x2="620.00" y2="550" stroke="#f2f2f2"/>
+<line x1="711.67" y1="25" x2="711.67" y2="550" stroke="#f2f2f2"/>
+<line x1="803.33" y1="25" x2="803.33" y2="550" stroke="#f2f2f2"/>
+<line x1="895.00" y1="25" x2="895.00" y2="550" stroke="#f2f2f2"/>
+<line x1="986.67" y1="25" x2="986.67" y2="550" stroke="#f2f2f2"/>
+<line x1="1078.33" y1="25" x2="1078.33" y2="550" stroke="#f2f2f2"/>
+<text x="115.83" y="566.00" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#444">Jan</text>
+<text x="207.50" y="566.00" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#444">Feb</text>
+<text x="299.17" y="566.00" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#444">Mar</text>
+<text x="390.83" y="566.00" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#444">Apr</text>
+<text x="482.50" y="566.00" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#444">May</text>
+<text x="574.17" y="566.00" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#444">Jun</text>
+<text x="665.83" y="566.00" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#444">Jul</text>
+<text x="757.50" y="566.00" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#444">Aug</text>
+<text x="849.17" y="566.00" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#444">Sep</text>
+<text x="940.83" y="566.00" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#444">Oct</text>
+<text x="1032.50" y="566.00" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#444">Nov</text>
+<text x="1124.17" y="566.00" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#444">Dec</text>
+<line x1="70" y1="550" x2="1170" y2="550" stroke="#888"/>
+<line x1="70" y1="25" x2="70" y2="550" stroke="#888"/>
+<line x1="81.46" y1="550.00" x2="81.46" y2="556.00" stroke="#888"/>
+<line x1="1147.08"   y1="550.00" x2="1147.08"   y2="556.00" stroke="#888"/>
+<text x="81.46" y="582.00" text-anchor="start" font-family="sans-serif" font-size="11" fill="#333">Initial Balance: 3483737</text>
+<text x="1147.08"   y="582.00" text-anchor="end"   font-family="sans-serif" font-size="11" fill="#333">Ending Balance: 3541226</text>
+<path d="M 104.38 38.50 L 127.29 38.50 L 150.21 38.50 L 184.58 38.50 L 230.42 38.50 L 276.25 38.50 L 322.08 38.50 L 360.28 38.50 L 360.28 39.94 L 322.08 42.22 L 276.25 43.41 L 230.42 45.73 L 184.58 45.34 L 150.21 47.31 L 127.29 48.25 L 104.38 43.37 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 513.06 32.09 L 537.50 32.09 L 555.83 32.09 L 574.17 32.09 L 592.50 32.09 L 610.83 32.09 L 627.64 32.09 L 642.92 32.09 L 658.19 32.09 L 673.47 32.09 L 688.75 32.09 L 704.03 32.09 L 723.12 32.09 L 746.04 32.09 L 746.04 32.73 L 723.12 33.02 L 704.03 35.39 L 688.75 37.77 L 673.47 32.95 L 658.19 35.24 L 642.92 34.98 L 627.64 37.30 L 610.83 39.14 L 592.50 40.13 L 574.17 39.46 L 555.83 41.82 L 537.50 41.62 L 513.06 36.84 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 791.88 29.93 L 849.17 29.93 L 910.28 29.93 L 940.83 29.93 L 971.39 29.93 L 971.39 30.26 L 940.83 32.73 L 910.28 33.38 L 849.17 32.45 L 791.88 34.80 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<path d="M 1147.08 25.00 L 1147.08 30.06 Z" fill="#d0d0d0" fill-opacity="0.5" stroke="none"/>
+<polyline fill="none" stroke="#111" stroke-width="1.2" points="81.46,38.50 104.38,43.37 127.29,48.25 150.21,47.31 184.58,45.34 230.42,45.73 276.25,43.41 322.08,42.22 360.28,39.94 390.83,37.63 421.39,35.34 451.94,33.49 482.50,32.09 513.06,36.84 537.50,41.62 555.83,41.82 574.17,39.46 592.50,40.13 610.83,39.14 627.64,37.30 642.92,34.98 658.19,35.24 673.47,32.95 688.75,37.77 704.03,35.39 723.12,33.02 746.04,32.73 768.96,29.93 791.88,34.80 849.17,32.45 910.28,33.38 940.83,32.73 971.39,30.26 1032.50,27.85 1101.25,25.00 1147.08,30.06"/>
+<text x="15" y="287.5" transform="rotate(-90 15,287.5)" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#333">USD</text>
+</svg>

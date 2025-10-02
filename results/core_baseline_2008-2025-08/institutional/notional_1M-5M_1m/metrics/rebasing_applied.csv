@@ -1,0 +1,3 @@
+year,prev_eom_month,prev_eom_nav,next_first_month,next_first_nav,delta_abs,factor_s,cashflow_ccy
+2010,2010-12,1674476.83,2011-01,1000000.0,-674476.83,1.674477,674476.83
+2017,2017-12,1541729.96,2018-01,1000000.0,-541729.96,1.54173,541729.96
