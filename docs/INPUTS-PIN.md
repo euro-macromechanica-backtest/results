@@ -29,6 +29,9 @@ integrity/
     economic_calendars_prepared_2001-2025-08.sha256
     economic_calendars_prepared_2001-2025-08.sha256.asc
     economic_calendars_prepared_2001-2025-08.sha256.ots
+    gbpusd_prepared_2008-2025-08.sha256
+    gbpusd_prepared_2008-2025-08.sha256.asc
+    gbpusd_prepared_2008-2025-08.sha256.ots
 keys/
   emm_pub_key.asc        # public key for GPG verification
 ```

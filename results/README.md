@@ -67,6 +67,8 @@ Each `mode` includes a `README.ru.md` with an overview and **CSV metrics** under
 - **Composite Baseline (Core + Extended):**
   - *Retail Rebate* — risk **1.5%** (compounding across the full period from a $100 000 start).
 
+- **GBPUSD Cross Asset Test** - risk **1.0%** (start capital $100 000 each year and compounding across the full period from a $100 000 start).
+
 **The Institutional profile uses capitalization modes tied to notional volume ranges at 1.0% risk**
   - Notional 1M-5M (starting balance $1 000 000, rebase to $1 000 000 when the threshold ≥ $1 500 000 is reached at year‑end close).
   - Notional 5M-15M (starting balance $3 400 000, rebase to $3 400 000 when the threshold ≥ $4 500 000 is reached at year‑end close).
@@ -156,7 +158,25 @@ where \(N\) is the window size (e.g., 12 or 36 months) and \(M\) is the number o
 - Publication policy: if \(M<2\), the metric is flagged as missing.
 
 ### OOS / Walk-Forward / Multiple Testing & Selection Bias
-**OOS/Walk-Forward are not used**: a **single fixed M5 EMM logic** is applied **without re-optimization/curve fitting**; the usual purpose of OOS is to detect overfitting after tuning, **which does not apply here**. **Multiple-testing bias is absent**: a **single hypothesis/strategy** was tested with **no parameter sweeps** (selection bias is minimal). **Robustness is supported** by the **long history**, **balance-curve dynamics** (built from the `balance_YYYY.csv` files), **12/36-month rolling windows**, **drawdown quantiles**, **BCa intervals**, and **Monte Carlo** (stationary bootstrap **across all stated configurations**). **For audit on request**, a **holdout** (again with no retraining and no parameter changes) can be prepared for independent verification.
+
+**Time-based OOS / Walk-Forward are not applied**, as a **single fixed M5 EMM logic** is used **without re-optimization or parameter tuning**. The purpose of time-based OOS is to detect overfitting after parameter adjustments, **which is not relevant here**.
+
+**Multiple testing / selection bias are absent**, since **only one hypothesis / one parameter set** was tested, with no configuration sweeps and no cherry-picking.
+
+**Cross-asset test on GBPUSD** serves as an independent **out-of-sample (OOS) by asset**: parameters optimized on EURUSD were applied **without any changes** to GBPUSD. Post-Brexit, the EURUSD–GBPUSD correlation decreased significantly, so successful application of the model on GBPUSD confirms:
+- absence of overfitting,  
+- the model’s ability to **generalize**,  
+- stability and robustness of the performance profile on an independent asset.
+
+**Strategy robustness is further supported by**:
+- long historical data,  
+- equity curve dynamics (files `balance_YYYY.csv`),  
+- 12/36-month rolling periods,  
+- drawdown quantiles,  
+- BCa confidence intervals,  
+- Monte Carlo (stationary bootstrap across all configurations).
+
+Upon request, a **holdout period** can be prepared for independent auditing, without re-optimization or parameter changes.
 
 > **Calmar — denominator protection:** an **ε‑guard** is applied to `|MaxDD|` to avoid division by near‑zero.  
 > **Rolling‑window completeness:** rollings are computed only on **full windows**; incomplete windows yield `NaN` and the flag `insufficient_months=true`.
@@ -198,7 +218,7 @@ where \(N\) is the window size (e.g., 12 or 36 months) and \(M\) is the number o
 > - If a **discrepancy** is found in the overview text (vs. what follows from the CSVs), **the CSV‑based calculations are authoritative**.
 
 ### Full methodology and metric definitions
-See [`docs/metrics_schema.json`](https://github.com/euro-macromechanica-backtest/results/tree/main/docs/metrics_schema.json) and [`docs/metrics_schema.md`](https://github.com/euro-macromechanica-backtest/results/tree/main/docs/metrics_schema.md).  
+See [`docs/metrics_methodology/metrics_schema.json`](https://github.com/euro-macromechanica-backtest/results/tree/main/docs/metrics_methodology/metrics_schema.json) and [`docs/metrics_methodology/metrics_schema.md`](https://github.com/euro-macromechanica-backtest/results/tree/main/docs/metrics_methodology/metrics_schema.md).  
 Duplicated **methodology** files and the calculator script are published in the [`metrics-toolkit`](https://github.com/euro-macromechanica-backtest/metrics-toolkit) repository for transparency.
 
 ---
@@ -257,7 +277,7 @@ metrics/
 ## 📎 Links
 
 - **[Euro Macromechanica (EMM) Backtest — Overview and Methodology](https://github.com/euro-macromechanica-backtest/results/blob/main/README.md)**
-- **Full methodology and metric definitions**: [`docs/metrics_schema.json`](https://github.com/euro-macromechanica-backtest/results/tree/main/docs/metrics_schema.json) / [`docs/metrics_schema.md`](https://github.com/euro-macromechanica-backtest/results/tree/main/docs/metrics_schema.md)
+- **Full methodology and metric definitions**: [`docs/metrics_methodology/metrics_schema.json`](https://github.com/euro-macromechanica-backtest/results/tree/main/docs/metrics_methodology/metrics_schema.json) / [`docs/metrics_methodology/metrics_schema.md`](https://github.com/euro-macromechanica-backtest/results/tree/main/docs/metrics_methodology/metrics_schema.md)
 - **Cost model (commission, spread, slippage) M5 EMM cost model v1.0** — [`docs/cost_model/m5_emm_cost_model_v1.0.csv`](https://github.com/euro-macromechanica-backtest/results/tree/main/docs/cost_model/m5_emm_cost_model_v1.0.csv).
 - **Notional‑volume cost table (spread, slippage)** — [/docs/cost_model/eurusd_market_order_costs_ecn_round-turn_pips_v1.0](https://github.com/euro-macromechanica-backtest/results/tree/main/docs/cost_model/eurusd_market_order_costs_ecn_round-turn_pips_v1.0.csv).
 - **Audit guide** — [`docs/AUDIT.md`](https://github.com/euro-macromechanica-backtest/results/blob/main/docs/AUDIT.md)
